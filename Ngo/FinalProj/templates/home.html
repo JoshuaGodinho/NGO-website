@@ -29,9 +29,6 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .count:hover {
   --num: {{count}};
 }
-body {
-  margin: 2rem;
-}
 ul,li{
   list-style:none;
 }
@@ -141,16 +138,15 @@ ol li a{color:#fff;}
         </div>
         {% else %}
         <div class="w3-col s4">
-        <a href="{% url 'accounts:ngo_register' %}" class="w3-button w3-block"> Register your Ngo </a>
+        <a href="{% url 'accounts:ngo_register'%}" class="w3-button w3-block">Register your Ngo</a>
         </div>
         <div class="w3-col s4">
-        <a href="{% url 'accounts:reset' %}" class="w3-button w3-block"> Reset Password </a>
+        <a href="{% url 'accounts:reset'%}" class="w3-button w3-block">Reset Password </a>
         </div>
         <div class="w3-col s4">
-        <button class="w3-button w3-block" type="submit"> Logout</button>
-        </div>
-        {% endif %}        
-      </div>
+        <button class="w3-button w3-block" type="submit">Logout</button>
+        </div>     
+      {% endif %}  
   </form>
     {% else %}
     <div class="w3-col s6">
